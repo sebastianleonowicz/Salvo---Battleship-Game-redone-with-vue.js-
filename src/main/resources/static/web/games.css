@@ -1,0 +1,44 @@
+/*BODY AND WRAPPER*/
+.body{
+/*
+    width: 99%;
+    height: 100%;
+*/
+    background-image:url(202d78820965a968715d942379c8caf7.jpg);
+  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: grid;
+    grid-template-areas:
+    'logo logo logo lead lead lead'
+    'forms forms forms games games games'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  
+}
+/*LOGO*/
+.logo { grid-area: logo; }
+
+
+
+
+/*LOG IN AND FORMS*/
+.forms { grid-area: forms; }
+
+
+
+/*LEADERBOARD*/
+.leaderboard { grid-area: lead; }
+
+
+
+
+/*GAMES LIST*/
+.gamesList { grid-area: games; }
+
+
+/*FOOTER*/
+.footer { grid-area: footer; }

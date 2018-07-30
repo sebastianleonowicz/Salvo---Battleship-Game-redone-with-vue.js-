@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="game.css">
+
+
+    <title>Salvo</title>
+
+</head>
+
+<body>
+    <h1>SALVO GAME PAGE!</h1>
+    <button id="logOut"><p>Log out</p></button>
+    <button id="postShips"><p>Post Ships</p></button>
+    <button id="resetShips"><p>Reset Ships</p></button>
+
+
+    <h1 id="players"> </h1>
+    <h2>GRID FOR GP </h2>
+    <div class="currentGame">
+        <div class="top">
+            <div class="top1">TURN</div>
+            <div class="top2">
+                <div class="top1_1">Hits on You</div>
+                <div class="top1_2">
+                    <div class="subtop">Hits</div>
+                    <div class="subtop">Left</div>
+                </div>
+            </div>
+            <div class="top3">
+                <div class="top1_1">Hits on Opponent</div>
+                <div class="top1_2">
+                    <div class="subtop">Hits</div>
+                    <div class="subtop">Left</div>
+                </div>
+            </div>
+        </div>
+        <div class="bot">
+<!--
+            <div class="test">
+                <div id="test1" class="test1">2</div>
+                <div id="test2" class="test2">patrol boat X</div>
+                <div id="test3" class="test2">2</div>
+                <div id="test4" class="test2">patrol boat X sunk!!</div>
+                <div id="test5" class="test2">1</div>
+            </div>
+-->
+        </div>
+    </div>
+
+    <ol id="orderedList"></ol>
+    <h2>SHIP GRID</h2>
+    <div class="shipGrid">
+        <div id="demo"></div>
+        <p id="actionText"></p>
+        <div id="ships">
+            <div class="carrier" id="carrier">C</div>
+            <div class="battleship" id="battleship">B</div>
+            <div class="submarine" id="submarine">S</div>
+            <div class="destroyer" id="destroyer">D</div>
+            <div class="patrol" id="patrol">P</div>
+        </div>
+    </div>
+
+    <h2 class="salvoGrid">SALVO GRID</h2>
+    <div id="salvoes"></div>
+    <button id="chooseSalvoes">Shoot!</button>
+    <button id="postSalvoes">Post Salvoes</button>
+    <button id="resetSalvoes">Reset Salvoes</button>
+    <div id="grid" class="grid">
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/game.js"></script>
+
+
+
+</body>
+
+</html>

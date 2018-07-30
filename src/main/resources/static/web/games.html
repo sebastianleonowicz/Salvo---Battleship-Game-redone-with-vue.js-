@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="games.css">
+    <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+    <title>Salvo</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+
+        <!--       LOGO-->
+        <div class="logo">
+            <h1 class="h1">SALVO!</h1>
+        </div>
+
+
+        <!--
+    <table>
+        <tr></tr>
+    </table>
+-->
+        <!--       GAMES LIST-->
+        <ol id="orderedList" class="gamesList" data-list="list"></ol>
+        <p id="demo"></p>
+
+        <!--       LEADERBOARD-->
+        <table id="leaderboard" class="leaderboard"></table>
+
+        <!--       LOG IN AND FORMS-->
+        <div class="forms">
+            <p id="username"></p>
+            <div id="info">
+                <p id="infoTxt"></p>
+                <button id="logOut"><p>Log out</p></button>
+
+            </div>
+            <div id="logInForm">
+                Player Name:<br>
+                <input id="logInName" type="text" name="firstname" value="">
+                <br> Password:
+                <br>
+                <input id="logInPass" type="text" name="lastname" value="">
+                <br><br>
+                <button id="logInSubmit"><p>Log In</p></button>
+
+            </div>
+
+
+            <div id="signUpForm">
+                Player Name:<br>
+                <input id="signUpName" type="text" name="firstname" value="">
+                <br> Password:
+                <br>
+                <input id="signUpPass" type="text" name="lastname" value="">
+                <br><br>
+                <button id="signInSubmit"><p>sign up</p></button>
+            </div>
+
+            <button id="createGame"> create game</button>
+
+
+
+            <!--            vue-->
+            <div id="vue" class="gamesList" data-list="list">
+                <ol>
+                    <!--               makes 'todo' a ref for 'game', enables to ref game.id by todo.id-->
+                    <game-list v-for="game in games" :todo="game" :user1="user" :key="game.id">
+                    </game-list>
+
+                    <!--                 <player-name v-for="gp in game.gameplayer" :todo="game" :gameplayer="gp" :key="gameplayer.id"></player-name>-->
+                    <!--                <pre>{{$data}}</pre>-->
+                </ol>
+            </div>
+
+
+
+        </div>
+
+        <!--        FOOTER-->
+        <div class="footer"></div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/games.js"></script>
+</body>
+
+</html>

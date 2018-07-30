@@ -1,0 +1,152 @@
+/*
+.grid {
+    width: 1000px;
+    height: 1000px;
+}
+*/
+
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.salvoGrid {
+    position: absolute;
+    top: 1430px;
+}
+
+#ships {
+    position: absolute;
+    top: 1000px;
+    height: 400px;
+    width: 710px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.carrier, .battleship, .submarine, .destroyer, .patrol {
+    
+    width: 48px;
+    background-color: red;
+    border-radius: 25px;
+    z-index: 25;
+    position: absolute;
+    transition: .3s all;
+}
+.carrier {
+    height: 286px;
+}
+.battleship{
+    height: 230px;
+    left: 100px;
+}
+.submarine{
+     height: 170px;
+    left: 200px;
+}
+.destroyer{
+     height: 170px;
+    left: 300px;
+}
+.patrol{
+     height: 75px;
+    left: 400px;
+}
+#salvoes {
+    position: absolute;
+
+    width: 898px;
+    top: 1500px;
+}
+
+#demo {
+    width: 898px;
+    top: 960px;
+}
+
+.flex-grid-thirds {
+    display: flex;
+    /*    justify-content: space-between;*/
+    flex-direction: row;
+}
+
+.flex-grid-thirds .col {
+    width: 7%;
+    background-color: aqua;
+    border-style: solid;
+    border-color: red;
+    height: 57px;
+    text-align: center;
+    border-width: 1px;
+}
+
+.flex-grid-thirds .ship {
+    width: 7%;
+    background-color: black;
+    border-style: solid;
+    border-color: red;
+    height: 57px;
+    text-align: center;
+    border-width: 1px;
+}
+
+/*CODE FOR GAME TURNS TABLE*/
+.currentGame {
+    position: absolute;
+    height: 400px;
+    width: 650px;
+    top: 1px;
+    left: 730px;
+    background-color: red;
+    text-align: center;
+}
+.currentGame div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.top{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.top1, .top2, .top3{
+    flex: 1;
+}
+.top1{
+    flex-grow: 0;
+}
+.top2, .top3 {
+    display: flex;
+    flex-direction: column;
+}
+.top1_1, .top1_2{
+    flex: 1;
+}
+.top1_2{
+    display: flex;
+    flex-direction: row;
+}
+.subtop{
+    flex: 1;
+}
+.bot{
+    background-color: blue;
+    height: 50%;
+      overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.test{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+  
+}
+.test1{
+    flex-grow: 0.4 !important;
+}
+.test1, .test2{
+    flex: 1;
+}
