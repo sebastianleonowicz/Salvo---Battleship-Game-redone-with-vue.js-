@@ -63,7 +63,8 @@
 
 
             <!--            vue-->
-            <div id="vue" class="gamesList" data-list="list">
+            <div id="vue" data-list="list">
+
                 <ol>
                     <!--               makes 'todo' a ref for 'game', enables to ref game.id by todo.id-->
                     <game-list v-for="game in games" :todo="game" :user1="user" :key="game.id">
@@ -72,6 +73,27 @@
                     <!--                 <player-name v-for="gp in game.gameplayer" :todo="game" :gameplayer="gp" :key="gameplayer.id"></player-name>-->
                     <!--                <pre>{{$data}}</pre>-->
                 </ol>
+
+                <table>
+                  
+                        <tr>
+                            <td>Name</td>
+                            <td>Total</td>
+                            <td>Won</td>
+                            <td>Lost</td>
+                            <td>Tied</td>
+                        </tr>
+                 
+                    
+                        <tr is="table-row" v-for="score in scores" :todo2="score"></tr>
+
+
+                    
+
+                </table>
+
+
+
             </div>
 
 
